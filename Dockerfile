@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY "Assignment 2 Files" ./
 
 EXPOSE 8080
 
