@@ -1,3 +1,8 @@
+if (process.env.SKIP_SQLITE_TESTS === 'true') {
+    test.skip('SQLite tests skipped in CI', () => {});
+    return;
+}
+
 process.env.SQLITE_DB_LOCATION = 'C:/tmp/test-db.sqlite';
 process.env.NODE_ENV = 'test';
 
